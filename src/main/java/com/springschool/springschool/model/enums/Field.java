@@ -1,4 +1,4 @@
-package com.springschool.springschool.model.impl;
+package com.springschool.springschool.model.enums;
 
 public enum Field {
     MAT,

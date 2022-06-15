@@ -1,6 +1,6 @@
 package com.springschool.springschool.model;
 
-import com.springschool.springschool.model.impl.Field;
+import com.springschool.springschool.model.enums.Field;
 import lombok.Data;
 
 import javax.persistence.Entity;
