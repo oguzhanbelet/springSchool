@@ -1,24 +1,20 @@
 package com.springschool.springschool.model;
 
-import com.springschool.springschool.model.enums.Field;
 import lombok.Data;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.MappedSuperclass;
 
-@Entity
 @Data
-public class Teacher {
+@MappedSuperclass
+public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
-    private Field field;
-
-    @ManyToOne
-    private Lesson lesson;
+    private String identityNumber;
+    private Byte age;
 }
