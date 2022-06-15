@@ -2,6 +2,7 @@ package com.springschool.springschool.model;
 
 import lombok.Data;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,6 +22,6 @@ public class Lesson {
     @OneToMany(mappedBy = "lesson")
     private List<Teacher> teachers;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST, mappedBy = "lessons")
     private List<Student> students;
 }

@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import java.util.Date;
 
 @Data
 @MappedSuperclass
@@ -16,5 +17,5 @@ public class Person {
     private String firstName;
     private String lastName;
     private String identityNumber;
-    private Byte age;
+    private Date birthYear;
 }

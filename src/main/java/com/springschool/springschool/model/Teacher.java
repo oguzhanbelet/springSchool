@@ -11,12 +11,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 @Data
-public class Teacher {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String firstName;
-    private String lastName;
+public class Teacher extends Person {
     private Field field;
 
     @ManyToOne
