@@ -17,5 +17,5 @@ public class StudentDTO {
     private String identityNumber;
     private Date birthYear;
     private Integer studentNumber;
-    private List<String> lessons;
+    private String lessonName;
 }

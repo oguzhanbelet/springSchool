@@ -17,4 +17,5 @@ public class TeacherDTO {
     private String identityNumber;
     private Date birthYear;
     private Field field;
+    private String lessonName;
 }
