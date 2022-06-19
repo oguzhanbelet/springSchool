@@ -38,7 +38,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public void updateStudentById(Long id) {
-        //TODO : studentDto yaratılacak.
+    public void updateStudentById(String firstName, String lastName, Long id) {
+        studentRepository.updateStudentNameById(firstName,lastName,id);
     }
 }

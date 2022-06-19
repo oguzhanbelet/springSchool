@@ -9,5 +9,5 @@ public interface StudentService {
     Student getStudent(Long id);
     List<Student> getStudents();
     void deleteStudent(Long id);
-    void updateStudentById(Long id);
+    void updateStudentById(String firstName, String lastName, Long id);
 }
